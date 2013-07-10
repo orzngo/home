@@ -1,0 +1,141 @@
+
+
+
+
+  
+  
+  
+  
+              <p>
+              View revision:</label>
+            (checked in by heavenshell, <a class="timeline" href="/share/timeline?from=2009-01-16T21%3A44%3A35Z%2B0900&amp;precision=second" title="2009-01-16T21:44:35Z+0900 in Timeline">4 years</a> ago)
+            <input type="hidden" name="new_path" value="/lang/php/misc/dict.php" />
+            <input type="hidden" name="new_rev" value="28523" />
+            <input type="hidden" name="old_path" value="/lang/php/misc/dict.php" />
+            <input type="hidden" name="old_rev" value="28523" />
+            <input type="submit" value="View changes..." title="Select paths and revs for Diff" />
+            <input type="text" id="rev" name="rev" size="6" />
+            <label for="rev">
+            <li class="first "><a href="/share/changeset/28523/lang/php/misc/dict.php">Last Change</a></li><li><a href="/share/browser/lang/php/misc/dict.php?annotate=blame&amp;rev=28523" title="Annotate each line with the last changed revision (this can be time consuming...)">Annotate</a></li><li class="last"><a href="/share/log/lang/php/misc/dict.php">Revision Log</a></li>
+            Revision <a href="/share/changeset/28523">28523</a>, <span title="1957 bytes">1.9 kB</span>
+          </div>
+          </div>
+          </td>
+          </th>
+          </ul>
+          <a rel="nofollow" href="/share/browser/lang/php/misc/dict.php?format=txt">Plain Text</a>
+          <a rel="nofollow" href="/share/export/39231/lang/php/misc/dict.php">Original Format</a>
+          <div class="buttons">
+          <div>
+          <input type="submit" value="Search" />
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <label for="proj-search">Search:</label>
+          <td class="message searchable">
+          <th scope="col">
+          <ul>
+          this.parentNode.parentNode.submit();
+        $("#jumploc input").hide();
+        $("#jumploc select").change(function () {
+        })
+        </div>
+        </form>
+        </form>
+        </li>
+        </li><li class="last">
+        </tr>
+        </tr>
+        <a id="logo" href="/share/wiki/TracIni#header_logo-section"><img src="/share/chrome/site/your_project_logo.png" alt="(please configure the [header_logo] section in trac.ini)" /></a>
+        <div>
+        <form action="" method="get">
+        <form action="/share/diff" method="get">
+        <h2>Context Navigation</h2>
+        <hr />
+        <li class="first">
+        <link rel="alternate" href="/share/browser/lang/php/misc/dict.php?format=txt" type="text/plain" title="Plain Text" /><link rel="alternate" href="/share/export/39231/lang/php/misc/dict.php" type="text/x-php; charset=utf-8" title="Original Format" />
+        <link rel="help" href="/share/wiki/TracGuide" />
+        <link rel="icon" href="/share/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="search" href="/share/search" />
+        <link rel="shortcut icon" href="/share/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="start" href="/share/wiki" />
+        <link rel="stylesheet" href="/share/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/share/chrome/common/css/code.css" type="text/css" /><link rel="stylesheet" href="/share/chrome/common/css/browser.css" type="text/css" />
+        <link rel="up" href="/share/browser/lang/php/misc" title="Parent directory" />
+        <strong>Note:</strong> See <a href="/share/wiki/TracBrowser">TracBrowser</a>
+        <tr>
+        <tr>
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+        for help on using the browser.
+        Powered by <a href="/share/about"><strong>Trac 0.11</strong></a><br />
+      /lang/php/misc/dict.php –
+      });
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </form>
+      </p>
+      </table>
+      </ul>
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/share/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <div id="anydiff">
+      <div id="ctxtnav" class="nav">
+      <div id="header">
+      <div id="help">
+      <div id="jumprev">
+      <div id="metanav" class="nav">
+      <div id="preview" class="searchable">
+      <form id="search" action="/share/search" method="get">
+      <h1>
+      <h3>Download in other formats:</h3>
+      <li class="first"><a href="/share/login">Login</a></li><li><a href="/share/prefs">Preferences</a></li><li><a href="/share/wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="/share/about">About Trac</a></li>
+      <li class="first"><a href="/share/wiki">Wiki</a></li><li><a href="/share/timeline">Timeline</a></li><li><a href="/share/roadmap">Roadmap</a></li><li class="active"><a href="/share/browser">Browse Source</a></li><li><a href="/share/report">View Tickets</a></li><li class="last"><a href="/share/search">Search</a></li>
+      <link type="application/opensearchdescription+xml" rel="search" href="/share/search/opensearch" title="Search CodeRepos::Share" />
+      <p class="left">
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+      <table id="info" summary="Revision info">
+      <ul>
+      CodeRepos::Share – Trac
+      jQuery(document).ready(function($) {
+    <![endif]-->
+    <!--[if lt IE 7]>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </script>
+    </title>
+    </ul>
+    </ul>
+    <a class="pathentry first" title="Go to root directory" href="/share/browser">root</a><span class="pathentry sep">/</span><a class="pathentry" title="View lang" href="/share/browser/lang">lang</a><span class="pathentry sep">/</span><a class="pathentry" title="View php" href="/share/browser/lang/php">php</a><span class="pathentry sep">/</span><a class="pathentry" title="View misc" href="/share/browser/lang/php/misc">misc</a><span class="pathentry sep">/</span><a class="pathentry" title="View dict.php" href="/share/browser/lang/php/misc/dict.php">dict.php</a>
+    <br style="clear: both" />
+    <div id="altlinks">
+    <div id="banner">
+    <div id="content" class="browser">
+    <div id="footer" lang="en" xml:lang="en"><hr />
+    <div id="main">
+    <div id="mainnav" class="nav">
+    <link rel="stylesheet" type="text/css" media="screen,tv,projection" title="ass-ari" href="http://svn.coderepos.org/share/websites/coderepos.org/trac/share/styles/ass-ari.css" /><link rel="alternate stylesheet" type="text/css" media="screen,tv,projection" title="plants-repository" href="http://svn.coderepos.org/share/websites/coderepos.org/trac/share/styles/plants-repository.css" /><link rel="alternate stylesheet" type="text/css" media="screen,tv,projection" title="default" href="http://svn.coderepos.org/share/websites/coderepos.org/trac/share/styles/default.css" /><link rel="openid2.provider" href="http://openid.coderepos.org/auth" /><link rel="openid.server" href="http://openid.coderepos.org/auth" /><script type="text/javascript" src="http://svn.coderepos.org/share/lang/javascript/javascript-xpath/trunk/release/javascript-xpath-latest-cmp.js"></script><script type="text/javascript" src="http://svn.coderepos.org/share/lang/javascript/javascript-xpath/bindings/jquery/src/xpath4jquery.js"></script><script type="text/javascript" src="http://svn.coderepos.org/share/websites/coderepos.org/trac/share/js/TracUtils.js"></script>
+    <script type="text/javascript" src="/share/chrome/common/js/ie_pre7_hacks.js"></script>
+    <script type="text/javascript" src="/share/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/share/chrome/common/js/trac.js"></script><script type="text/javascript" src="/share/chrome/common/js/search.js"></script>
+    <script type="text/javascript">
+    <table class="code"><thead><tr><th class="lineno" title="Line numbers">Line</th><th class="content"> </th></tr></thead><tbody><tr><th id="L1"><a href="#L1">1</a></th><td><span class="code-lang">&lt;?php</span></td></tr><tr><th id="L2"><a href="#L2">2</a></th><td><span class="code-comment">/**</span></td></tr><tr><th id="L3"><a href="#L3">3</a></th><td><span class="code-comment"> * Echo php builtin classes, interfaces, functions, constants for vim dictionary</span></td></tr><tr><th id="L4"><a href="#L4">4</a></th><td><span class="code-comment"> *</span></td></tr><tr><th id="L5"><a href="#L5">5</a></th><td><span class="code-comment"> * eg:# php dict.php | sort &gt; ~/.vim/dict/php_functions.dict</span></td></tr><tr><th id="L6"><a href="#L6">6</a></th><td><span class="code-comment"> *</span></td></tr><tr><th id="L7"><a href="#L7">7</a></th><td><span class="code-comment"> * @version   $id$</span></td></tr><tr><th id="L8"><a href="#L8">8</a></th><td><span class="code-comment"> * @copyright 2009 Heavens hell</span></td></tr><tr><th id="L9"><a href="#L9">9</a></th><td><span class="code-comment"> * @author    Heavens hell &lt;heavenshell.jp@gmail.com&gt;</span></td></tr><tr><th id="L10"><a href="#L10">10</a></th><td><span class="code-comment"> * @license   New BSD License</span></td></tr><tr><th id="L11"><a href="#L11">11</a></th><td><span class="code-comment"> */</span></td></tr><tr><th id="L12"><a href="#L12">12</a></th><td><span class="code-lang">$f </span><span class="code-keyword">= </span><span class="code-lang">false</span><span class="code-keyword">;</span></td></tr><tr><th id="L13"><a href="#L13">13</a></th><td><span class="code-lang">$c </span><span class="code-keyword">= </span><span class="code-lang">false</span><span class="code-keyword">;</span></td></tr><tr><th id="L14"><a href="#L14">14</a></th><td><span class="code-lang">$i </span><span class="code-keyword">= </span><span class="code-lang">false</span><span class="code-keyword">;</span></td></tr><tr><th id="L15"><a href="#L15">15</a></th><td><span class="code-lang">$d </span><span class="code-keyword">= </span><span class="code-lang">false</span><span class="code-keyword">;</span></td></tr><tr><th id="L16"><a href="#L16">16</a></th><td><span class="code-lang">$usage </span><span class="code-keyword">= </span><span class="code-lang">null</span><span class="code-keyword">;</span></td></tr><tr><th id="L17"><a href="#L17">17</a></th><td><span class="code-keyword">if (</span><span class="code-lang">$argc </span><span class="code-keyword">&gt; </span><span class="code-lang">1</span><span class="code-keyword">) {</span></td></tr><tr><th id="L18"><a href="#L18">18</a></th><td><span class="code-keyword">    foreach (</span><span class="code-lang">$argv </span><span class="code-keyword">as </span><span class="code-lang">$key </span><span class="code-keyword">=&gt; </span><span class="code-lang">$val</span><span class="code-keyword">) {</span></td></tr><tr><th id="L19"><a href="#L19">19</a></th><td><span class="code-keyword">        if (</span><span class="code-lang">$argv</span><span class="code-keyword">[</span><span class="code-lang">$key</span><span class="code-keyword">] === </span><span class="code-lang">basename</span><span class="code-keyword">(</span><span class="code-lang">__FILE__</span><span class="code-keyword">)) {</span></td></tr><tr><th id="L20"><a href="#L20">20</a></th><td><span class="code-keyword">            continue;</span></td></tr><tr><th id="L21"><a href="#L21">21</a></th><td><span class="code-keyword">        } else if (</span><span class="code-lang">$argv</span><span class="code-keyword">[</span><span class="code-lang">$key</span><span class="code-keyword">] === </span><span class="code-string">'-c'</span><span class="code-keyword">) {</span></td></tr><tr><th id="L22"><a href="#L22">22</a></th><td><span class="code-keyword">            </span><span class="code-comment">// Classes</span></td></tr><tr><th id="L23"><a href="#L23">23</a></th><td><span class="code-comment">            </span><span class="code-lang">$c </span><span class="code-keyword">= </span><span class="code-lang">true</span><span class="code-keyword">;</span></td></tr><tr><th id="L24"><a href="#L24">24</a></th><td><span class="code-keyword">        } else if (</span><span class="code-lang">$argv</span><span class="code-keyword">[</span><span class="code-lang">$key</span><span class="code-keyword">] === </span><span class="code-string">'-f'</span><span class="code-keyword">) {</span></td></tr><tr><th id="L25"><a href="#L25">25</a></th><td><span class="code-keyword">            </span><span class="code-comment">// Functions</span></td></tr><tr><th id="L26"><a href="#L26">26</a></th><td><span class="code-comment">            </span><span class="code-lang">$f </span><span class="code-keyword">= </span><span class="code-lang">true</span><span class="code-keyword">;</span></td></tr><tr><th id="L27"><a href="#L27">27</a></th><td><span class="code-keyword">        } else if (</span><span class="code-lang">$argv</span><span class="code-keyword">[</span><span class="code-lang">$key</span><span class="code-keyword">] === </span><span class="code-string">'-i'</span><span class="code-keyword">) {</span></td></tr><tr><th id="L28"><a href="#L28">28</a></th><td><span class="code-keyword">            </span><span class="code-comment">// Interfaces</span></td></tr><tr><th id="L29"><a href="#L29">29</a></th><td><span class="code-comment">            </span><span class="code-lang">$i </span><span class="code-keyword">= </span><span class="code-lang">true</span><span class="code-keyword">;</span></td></tr><tr><th id="L30"><a href="#L30">30</a></th><td><span class="code-keyword">        } else if (</span><span class="code-lang">$argv</span><span class="code-keyword">[</span><span class="code-lang">$key</span><span class="code-keyword">] === </span><span class="code-string">'-d'</span><span class="code-keyword">) {</span></td></tr><tr><th id="L31"><a href="#L31">31</a></th><td><span class="code-keyword">            </span><span class="code-comment">// Constants</span></td></tr><tr><th id="L32"><a href="#L32">32</a></th><td><span class="code-comment">            </span><span class="code-lang">$d </span><span class="code-keyword">= </span><span class="code-lang">true</span><span class="code-keyword">;</span></td></tr><tr><th id="L33"><a href="#L33">33</a></th><td><span class="code-keyword">        } else {</span></td></tr><tr><th id="L34"><a href="#L34">34</a></th><td><span class="code-keyword">            </span><span class="code-lang">$usage  </span><span class="code-keyword">= </span><span class="code-string">'Usage: php dict.php [-c] [-f] [-i] [-d]' </span><span class="code-keyword">. </span><span class="code-lang">PHP_EOL</span><span class="code-keyword">;</span></td></tr><tr><th id="L35"><a href="#L35">35</a></th><td><span class="code-keyword">            </span><span class="code-lang">$usage </span><span class="code-keyword">.= </span><span class="code-string">'       -c display built in classes' </span><span class="code-keyword">. </span><span class="code-lang">PHP_EOL</span><span class="code-keyword">;</span></td></tr><tr><th id="L36"><a href="#L36">36</a></th><td><span class="code-keyword">            </span><span class="code-lang">$usage </span><span class="code-keyword">.= </span><span class="code-string">'       -f display built in functions' </span><span class="code-keyword">. </span><span class="code-lang">PHP_EOL</span><span class="code-keyword">;</span></td></tr><tr><th id="L37"><a href="#L37">37</a></th><td><span class="code-keyword">            </span><span class="code-lang">$usage </span><span class="code-keyword">.= </span><span class="code-string">'       -i display builtin interfaces' </span><span class="code-keyword">. </span><span class="code-lang">PHP_EOL</span><span class="code-keyword">;</span></td></tr><tr><th id="L38"><a href="#L38">38</a></th><td><span class="code-keyword">            </span><span class="code-lang">$usage </span><span class="code-keyword">.= </span><span class="code-string">'       -d display builtin constants' </span><span class="code-keyword">. </span><span class="code-lang">PHP_EOL</span><span class="code-keyword">;</span></td></tr><tr><th id="L39"><a href="#L39">39</a></th><td><span class="code-keyword">        }</span></td></tr><tr><th id="L40"><a href="#L40">40</a></th><td><span class="code-keyword">    }</span></td></tr><tr><th id="L41"><a href="#L41">41</a></th><td><span class="code-keyword">} else {</span></td></tr><tr><th id="L42"><a href="#L42">42</a></th><td><span class="code-keyword">    </span><span class="code-lang">$f </span><span class="code-keyword">= </span><span class="code-lang">true</span><span class="code-keyword">;</span></td></tr><tr><th id="L43"><a href="#L43">43</a></th><td><span class="code-keyword">    </span><span class="code-lang">$c </span><span class="code-keyword">= </span><span class="code-lang">true</span><span class="code-keyword">;</span></td></tr><tr><th id="L44"><a href="#L44">44</a></th><td><span class="code-keyword">    </span><span class="code-lang">$i </span><span class="code-keyword">= </span><span class="code-lang">true</span><span class="code-keyword">;</span></td></tr><tr><th id="L45"><a href="#L45">45</a></th><td><span class="code-keyword">    </span><span class="code-lang">$d </span><span class="code-keyword">= </span><span class="code-lang">true</span><span class="code-keyword">;</span></td></tr><tr><th id="L46"><a href="#L46">46</a></th><td><span class="code-keyword">}</span></td></tr><tr><th id="L47"><a href="#L47">47</a></th><td><span class="code-keyword"></span></td></tr><tr><th id="L48"><a href="#L48">48</a></th><td><span class="code-keyword">if (!</span><span class="code-lang">is_null</span><span class="code-keyword">(</span><span class="code-lang">$usage</span><span class="code-keyword">)) {</span></td></tr><tr><th id="L49"><a href="#L49">49</a></th><td><span class="code-keyword">    echo </span><span class="code-lang">$usage</span><span class="code-keyword">;</span></td></tr><tr><th id="L50"><a href="#L50">50</a></th><td><span class="code-keyword">    exit(</span><span class="code-lang">0</span><span class="code-keyword">);</span></td></tr><tr><th id="L51"><a href="#L51">51</a></th><td><span class="code-keyword">}</span></td></tr><tr><th id="L52"><a href="#L52">52</a></th><td></td></tr><tr><th id="L53"><a href="#L53">53</a></th><td><span class="code-lang">$buffer </span><span class="code-keyword">= </span><span class="code-string">''</span><span class="code-keyword">;</span></td></tr><tr><th id="L54"><a href="#L54">54</a></th><td><span class="code-keyword">if (</span><span class="code-lang">$f </span><span class="code-keyword">=== </span><span class="code-lang">true</span><span class="code-keyword">) {</span></td></tr><tr><th id="L55"><a href="#L55">55</a></th><td><span class="code-keyword">    </span><span class="code-lang">$functions </span><span class="code-keyword">= </span><span class="code-lang">get_defined_functions</span><span class="code-keyword">();</span></td></tr><tr><th id="L56"><a href="#L56">56</a></th><td><span class="code-keyword">    </span><span class="code-lang">$buffer    </span><span class="code-keyword">= </span><span class="code-lang">join</span><span class="code-keyword">(</span><span class="code-string">"\n"</span><span class="code-keyword">,</span><span class="code-lang">$functions</span><span class="code-keyword">[</span><span class="code-string">"internal"</span><span class="code-keyword">]) . </span><span class="code-lang">PHP_EOL</span><span class="code-keyword">;</span></td></tr><tr><th id="L57"><a href="#L57">57</a></th><td><span class="code-keyword">}</span></td></tr><tr><th id="L58"><a href="#L58">58</a></th><td><span class="code-keyword"></span></td></tr><tr><th id="L59"><a href="#L59">59</a></th><td><span class="code-keyword">if (</span><span class="code-lang">$c </span><span class="code-keyword">=== </span><span class="code-lang">true</span><span class="code-keyword">) {</span></td></tr><tr><th id="L60"><a href="#L60">60</a></th><td><span class="code-keyword">    </span><span class="code-lang">$class </span><span class="code-keyword">= </span><span class="code-lang">get_declared_classes</span><span class="code-keyword">();</span></td></tr><tr><th id="L61"><a href="#L61">61</a></th><td><span class="code-keyword">    foreach (</span><span class="code-lang">$class </span><span class="code-keyword">as </span><span class="code-lang">$value</span><span class="code-keyword">) {</span></td></tr><tr><th id="L62"><a href="#L62">62</a></th><td><span class="code-keyword">        </span><span class="code-lang">$buffer </span><span class="code-keyword">.= </span><span class="code-lang">$value </span><span class="code-keyword">. </span><span class="code-lang">PHP_EOL</span><span class="code-keyword">;</span></td></tr><tr><th id="L63"><a href="#L63">63</a></th><td><span class="code-keyword">    }</span></td></tr><tr><th id="L64"><a href="#L64">64</a></th><td><span class="code-keyword">}</span></td></tr><tr><th id="L65"><a href="#L65">65</a></th><td><span class="code-keyword"></span></td></tr><tr><th id="L66"><a href="#L66">66</a></th><td><span class="code-keyword">if (</span><span class="code-lang">$i </span><span class="code-keyword">=== </span><span class="code-lang">true</span><span class="code-keyword">) {</span></td></tr><tr><th id="L67"><a href="#L67">67</a></th><td><span class="code-keyword">    </span><span class="code-lang">$interface </span><span class="code-keyword">= </span><span class="code-lang">get_declared_interfaces</span><span class="code-keyword">();</span></td></tr><tr><th id="L68"><a href="#L68">68</a></th><td><span class="code-keyword">    foreach (</span><span class="code-lang">$interface </span><span class="code-keyword">as </span><span class="code-lang">$value</span><span class="code-keyword">) {</span></td></tr><tr><th id="L69"><a href="#L69">69</a></th><td><span class="code-keyword">        </span><span class="code-lang">$buffer </span><span class="code-keyword">.= </span><span class="code-lang">$value </span><span class="code-keyword">. </span><span class="code-lang">PHP_EOL</span><span class="code-keyword">;</span></td></tr><tr><th id="L70"><a href="#L70">70</a></th><td><span class="code-keyword">    }</span></td></tr><tr><th id="L71"><a href="#L71">71</a></th><td><span class="code-keyword">}</span></td></tr><tr><th id="L72"><a href="#L72">72</a></th><td><span class="code-keyword"></span></td></tr><tr><th id="L73"><a href="#L73">73</a></th><td><span class="code-keyword">if (</span><span class="code-lang">$d </span><span class="code-keyword">=== </span><span class="code-lang">true</span><span class="code-keyword">) {</span></td></tr><tr><th id="L74"><a href="#L74">74</a></th><td><span class="code-keyword">    </span><span class="code-lang">$constants </span><span class="code-keyword">= </span><span class="code-lang">get_defined_constants</span><span class="code-keyword">();</span></td></tr><tr><th id="L75"><a href="#L75">75</a></th><td><span class="code-keyword">    foreach (</span><span class="code-lang">$constants </span><span class="code-keyword">as </span><span class="code-lang">$key </span><span class="code-keyword">=&gt; </span><span class="code-lang">$value</span><span class="code-keyword">) {</span></td></tr><tr><th id="L76"><a href="#L76">76</a></th><td><span class="code-keyword">        </span><span class="code-lang">$buffer </span><span class="code-keyword">.= </span><span class="code-lang">$key </span><span class="code-keyword">. </span><span class="code-lang">PHP_EOL</span><span class="code-keyword">;</span></td></tr><tr><th id="L77"><a href="#L77">77</a></th><td><span class="code-keyword">    }</span></td></tr><tr><th id="L78"><a href="#L78">78</a></th><td><span class="code-keyword">}</span></td></tr><tr><th id="L79"><a href="#L79">79</a></th><td><span class="code-keyword"></span></td></tr><tr><th id="L80"><a href="#L80">80</a></th><td><span class="code-keyword">echo </span><span class="code-lang">$buffer</span><span class="code-keyword">;</span></td></tr></tbody></table>
+    <title>
+    <title>/lang/php/misc/dict.php</title>
+    <ul>
+    <ul>
+  </body>
+  </div>
+  </div>
+  </h1>
+  </head>
+  </head>
+  <body>
+  <head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+</html>
+</p>
+<head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+Option does not work.... <br />

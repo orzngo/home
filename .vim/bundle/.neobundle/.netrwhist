@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/morio_yamada/hksn/Arduino-Syaberueno'
+let g:netrw_dirhist_2='/Applications'
+let g:netrw_dirhist_3='/Applications/Arduino.app'
+let g:netrw_dirhist_4='/Users/morio_yamada/hksn'
+let g:netrw_dirhist_5='/Users/morio_yamada'
+let g:netrw_dirhist_6='/cygdrive/d/mydoc/Dropbox/bordgame/my/kingdomhex'
+let g:netrw_dirhist_7='/home/kainsan/dropbox/bordgame/my/kingdomhex'
