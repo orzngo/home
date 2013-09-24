@@ -45,6 +45,8 @@ set incsearch                      "インクリメンタルサーチを行う
 "-------------------------------------------------------------------------------
 "" タブ系
 "-------------------------------------------------------------------------------
+set smarttab
+set expandtab
 set tabstop=4
 set shiftwidth=4
 "-------------------------------------------------------------------------------
@@ -69,6 +71,8 @@ NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/unite.vim.git'
+NeoBundle 'Shougo/vimshell.git'
+NeoBundle 'Shougo/vimproc'
 NeoBundle 'ujihisa/unite-colorscheme.git'
 NeoBundle 'JavaScript-syntax'
 NeoBundle 'timcharper/textile.vim'
@@ -89,6 +93,13 @@ NeoBundle 'sudar/vim-arduino-syntax'
 
 filetype plugin indent on	"required
 
+"-------------------------------------------------------------------------------
+""vimshell
+"-------------------------------------------------------------------------------
+let g:vimshell_popup_command = 'topleft sp | execute "resize " .g:my_vimshell_popup() | set winfixheight'
+function! g:my_vimshell_popup()
+    return winheight(0) * g:vimshell_popup_height / 100
+endfunction
 "-------------------------------------------------------------------------------
 ""ctrlp
 "-------------------------------------------------------------------------------
