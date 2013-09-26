@@ -87,6 +87,7 @@ NeoBundle 'kien/ctrlp.vim.git'
 NeoBundle 'sudo.vim'
 NeoBundle 'deris/vim-duzzle'
 NeoBundle 'sudar/vim-arduino-syntax'
+NeoBundle 'kmnk/vim-unite-giti'
 
 "NeoBundle 'skammer/vim-css-color'
 
@@ -94,12 +95,24 @@ NeoBundle 'sudar/vim-arduino-syntax'
 filetype plugin indent on	"required
 
 "-------------------------------------------------------------------------------
+""Unite
+"-------------------------------------------------------------------------------
+nnoremap <silent> <Space>g :Unite giti<CR>
+let g:unite_split_rule = 'botright'
+"-------------------------------------------------------------------------------
 ""vimshell
 "-------------------------------------------------------------------------------
 let g:vimshell_popup_command = 'topleft sp | execute "resize " .g:my_vimshell_popup() | set winfixheight'
 function! g:my_vimshell_popup()
-    return winheight(0) * g:vimshell_popup_height / 100
+    return winheight(0) * g:vimshell_popup_height / 90
 endfunction
+
+autocmd! Filetype vimfiler call g:my_vimfiler_settings()
+function! g:my_vimfiler_settings()
+    nnoremap <buffer>b :Unite bookmark -default-action=cd -buffer-name=bookmark<CR>
+endfunction
+
+nnoremap <silent> <Space>s :VimShell<CR>
 "-------------------------------------------------------------------------------
 ""ctrlp
 "-------------------------------------------------------------------------------
@@ -120,10 +133,13 @@ colorscheme jellybeans
 "-------------------------------------------------------------------------------
 ""vimfiler
 "-------------------------------------------------------------------------------
-command Vf VimFiler -buffer-name=explorer -split -simple -winwidth=35 -toggle -no-quit
+command! Vf VimFiler -buffer-name=explorer -split -simple -winwidth=35 -toggle -no-quit
+nnoremap <silent> <Space>f :Vf<CR>
+
 let g:vimfiler_tree_leaf_icon = ' '
 let g:vimfiler_file_icon = '-'
 let g:vimfiler_marked_file_icon = '*'
+let g:vimfiler_enable_auto_cd = 1
 
 "-------------------------------------------------------------------------------
 ""SyntaxCheck
@@ -162,3 +178,16 @@ let g:neocomplcache_manual_completion_start_length = 0
 let g:neocomplcache_caching_percent_in_statusline = 1
 let g:neocomplcache_enable_skip_completion = 1
 let g:neocomplcache_skip_input_time = '0.5'
+
+"-------------------------------------------------------------------------------
+""その他ショートカット
+"-------------------------------------------------------------------------------
+"ウィンドウ移動
+"nnoremap <Space>j <c-w>j
+"nnoremap <Space>k <c-w>k
+"nnoremap <Space>h <c-w>h
+"nnoremap <Space>l <c-w>l
+
+"カーソル横移動
+noremap <Space>h  ^
+noremap <Space>l  $
