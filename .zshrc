@@ -8,9 +8,6 @@ export KCODE=u           # KCODEにUTF-8を設定
 export PATH=$PATH:$HOME/bin
 export JAVA_HOME=/Library/Java/Home
 
-bindkey -v							#vimきーばいんど
-source ~/.zsh_vim_visualmode_osxver #ゔぃじゅあるもーど
-
 #setopt correct           # コマンドのスペルを訂正する
 #setopt magic_equal_subst # =以降も補完する(--prefix=/usrなど)
 
