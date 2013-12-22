@@ -67,6 +67,13 @@ if has('vim_starting')
 endif
 call neobundle#rc(expand('~/.vim/bundle/'))
 
+"なんかあったら勝手にインストールはじめます
+if has('vim_starting')
+    if len(neobundle#get_not_installed_bundle_names())
+        :NeoBundleInstall
+    endif
+endif
+
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
@@ -128,8 +135,10 @@ NeoBundle 'altercation/solarized'
 NeoBundle 'vim-scripts/newspaper.vim'
 NeoBundle 'nanotech/jellybeans.vim'
 
-colorscheme jellybeans
-
+:try
+    colorscheme jellybeans
+:catch
+:endtry
 "-------------------------------------------------------------------------------
 ""vimfiler
 "-------------------------------------------------------------------------------
