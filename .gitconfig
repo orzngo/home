@@ -1,0 +1,6 @@
+[include]
+    path = ~/.gitconfig.include
+[alias]
+	df = !git diff | vim -R -
+	st = status -s
+	lg = log --graph --pretty='format:%C(yellow)%h%Cblue%d%Creset %s %C(black bold)%an, %ar%Creset'
