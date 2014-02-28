@@ -47,12 +47,14 @@ set incsearch                      "インクリメンタルサーチを行う
 "-------------------------------------------------------------------------------
 set smarttab
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=4
+set smartindent                     "新しい行を開始したときに、新しい行のインデントを現在行と同じ量にする
+set autoindent
 "-------------------------------------------------------------------------------
 "" その他設定
 "-------------------------------------------------------------------------------
-set smartindent                     "新しい行を開始したときに、新しい行のインデントを現在行と同じ量にする
 set hlsearch                       "highlight matches with last search pattern
 
 "actionscript setting
@@ -80,6 +82,7 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/unite.vim.git'
 NeoBundle 'Shougo/vimshell.git'
 NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/unite-outline'
 NeoBundle 'ujihisa/unite-colorscheme.git'
 NeoBundle 'JavaScript-syntax'
 NeoBundle 'timcharper/textile.vim'
@@ -106,6 +109,11 @@ filetype plugin indent on	"required
 "-------------------------------------------------------------------------------
 nnoremap <silent> <Space>g :Unite giti<CR>
 let g:unite_split_rule = 'botright'
+
+"-------------------------------------------------------------------------------
+""Unite outline
+"-------------------------------------------------------------------------------
+nnoremap <Space>t :<C-u>Unite -buffer-name=outline -vertical -no-quit -winwidth=45 outline<CR>
 "-------------------------------------------------------------------------------
 ""vimshell
 "-------------------------------------------------------------------------------
@@ -125,8 +133,9 @@ nnoremap <silent> <Space>s :VimShell<CR>
 "-------------------------------------------------------------------------------
 let g:ctrlp_use_migemo = 1
 let g:ctrlp_clear_cache_on_exit = 0   " 終了時キャッシュをクリアしない
-let g:ctrlp_mruf_max            = 500 " MRUの最大記録数
+let g:ctrlp_mruf_max            = 5000 " MRUの最大記録数
 let g:ctrlp_open_new_file       = 1   " 新規ファイル作成時にタブで開く
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 "-------------------------------------------------------------------------------
 ""Color
 "-------------------------------------------------------------------------------
@@ -160,7 +169,7 @@ let g:syntastic_loc_list_height=6 "エラー表示ウィンドウの高さ
 set statusline+=%#warningmsg# "エラーメッセージの書式
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_javascript_checker = 'jshint' "jshintを使う
+"let g:syntastic_javascript_checker = 'jshint' "jshintを使う
 let g:syntastic_mode_map = {
       \ 'mode': 'active',
       \ 'active_filetypes': ['ruby', 'javascript'],
