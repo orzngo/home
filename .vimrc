@@ -98,16 +98,22 @@ NeoBundle 'sudo.vim'
 NeoBundle 'deris/vim-duzzle'
 NeoBundle 'sudar/vim-arduino-syntax'
 NeoBundle 'kmnk/vim-unite-giti'
+NeoBundle 'git://github.com/vim-scripts/actionscript.vim--Leider.git'
+NeoBundle 'hrsh7th/vim-versions'
 
+NeoBundle 'git://github.com/hrsh7th/vim-better-css-indent.git'
 "NeoBundle 'skammer/vim-css-color'
 
 
 filetype plugin indent on	"required
 
+"ひとまずエラー抑制の応急処置
+let g:neosnippet#disable_runtime_snippets = { "_": 1, }
 "-------------------------------------------------------------------------------
 ""Unite
 "-------------------------------------------------------------------------------
-nnoremap <silent> <Space>g :Unite giti<CR>
+"nnoremap <silent> <Space>g :Unite giti<CR>
+nnoremap <silent> <Space>g :UniteVersions<CR>
 let g:unite_split_rule = 'botright'
 
 "-------------------------------------------------------------------------------
@@ -163,7 +169,7 @@ let g:vimfiler_enable_auto_cd = 1
 ""SyntaxCheck
 "-------------------------------------------------------------------------------
 let g:syntastic_check_on_open=0 "ファイルを開いたときはチェックしない
-let g:syntastic_check_on_save=1 "保存時にはチェック
+let g:syntastic_check_on_save=0 "保存時にはチェック
 let g:syntastic_auto_loc_list=1 "エラーがあったら自動でロケーションリストを開く
 let g:syntastic_loc_list_height=6 "エラー表示ウィンドウの高さ
 set statusline+=%#warningmsg# "エラーメッセージの書式
@@ -197,6 +203,23 @@ let g:neocomplcache_caching_percent_in_statusline = 1
 let g:neocomplcache_enable_skip_completion = 1
 let g:neocomplcache_skip_input_time = '0.5'
 
+
+"-------------------------------------------------------------------------------
+""JSON
+"-------------------------------------------------------------------------------
+NeoBundle 'elzr/vim-json'
+
+au BufRead,BufNewFile *.json set filetype=json
+
+command! -nargs=? Jq call s:Jq(<f-args>)
+function! s:Jq(...)
+  if 0 == a:0
+    let l:arg = "."
+  else
+    let l:arg = a:1
+  endif
+  execute "%! jq \"" . l:arg . "\""
+endfunction
 "-------------------------------------------------------------------------------
 ""その他ショートカット
 "-------------------------------------------------------------------------------

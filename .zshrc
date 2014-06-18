@@ -87,3 +87,4 @@ bindkey "^N" history-beginning-search-forward-end
 
 
 [ -f ~/.zshrc.include ] && source ~/.zshrc.include # include
+
