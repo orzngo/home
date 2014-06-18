@@ -36,6 +36,10 @@ augroup vimrc_restore_cursor_position
 	autocmd!
 	autocmd BufWinEnter * call s:RestoreCursorPostion()
 augroup END
+
+"エスケープ
+imap <C-j> <esc>
+
 "-------------------------------------------------------------------------------
 "" 検索系
 "-------------------------------------------------------------------------------
@@ -79,6 +83,7 @@ endif
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/unite.vim.git'
 NeoBundle 'Shougo/vimshell.git'
 NeoBundle 'Shougo/vimproc'
