@@ -105,15 +105,25 @@ NeoBundle 'sudar/vim-arduino-syntax'
 NeoBundle 'kmnk/vim-unite-giti'
 NeoBundle 'git://github.com/vim-scripts/actionscript.vim--Leider.git'
 NeoBundle 'hrsh7th/vim-versions'
+NeoBundle 'davidhalter/jedi-vim'
 
 NeoBundle 'git://github.com/hrsh7th/vim-better-css-indent.git'
-"NeoBundle 'skammer/vim-css-color'
 
+"-------------------------------------------------------------------------------
+""typescript
+"-------------------------------------------------------------------------------
+NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
+NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
 
+let g:syntastic_typescript_checkers = ['tsc']
+let g:syntastic_typescript_tsc_args = "--noImplicitAny --target ES5"
+"-------------------------------------------------------------------------------
 filetype plugin indent on	"required
 
 "ひとまずエラー抑制の応急処置
 let g:neosnippet#disable_runtime_snippets = { "_": 1, }
+
+
 "-------------------------------------------------------------------------------
 ""Unite
 "-------------------------------------------------------------------------------
@@ -124,7 +134,7 @@ let g:unite_split_rule = 'botright'
 "-------------------------------------------------------------------------------
 ""Unite outline
 "-------------------------------------------------------------------------------
-nnoremap <Space>t :<C-u>Unite -buffer-name=outline -vertical -no-quit -winwidth=45 outline<CR>
+nnoremap <Space>t :<C-u>Unite -buffer-name=outline -vertical -winwidth=45 outline<CR>
 "-------------------------------------------------------------------------------
 ""vimshell
 "-------------------------------------------------------------------------------
@@ -146,7 +156,7 @@ let g:ctrlp_use_migemo = 1
 let g:ctrlp_clear_cache_on_exit = 0   " 終了時キャッシュをクリアしない
 let g:ctrlp_mruf_max            = 5000 " MRUの最大記録数
 let g:ctrlp_open_new_file       = 1   " 新規ファイル作成時にタブで開く
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files | grep -v "babel\|watch_q9"']
 "-------------------------------------------------------------------------------
 ""Color
 "-------------------------------------------------------------------------------
@@ -174,17 +184,17 @@ let g:vimfiler_enable_auto_cd = 1
 ""SyntaxCheck
 "-------------------------------------------------------------------------------
 let g:syntastic_check_on_open=0 "ファイルを開いたときはチェックしない
-let g:syntastic_check_on_save=0 "保存時にはチェック
+let g:syntastic_check_on_save=1 "保存時にはチェック
 let g:syntastic_auto_loc_list=1 "エラーがあったら自動でロケーションリストを開く
 let g:syntastic_loc_list_height=6 "エラー表示ウィンドウの高さ
 set statusline+=%#warningmsg# "エラーメッセージの書式
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-"let g:syntastic_javascript_checker = 'jshint' "jshintを使う
+let g:syntastic_javascript_checkers = ['jshint'] "jshintを使う
 let g:syntastic_mode_map = {
       \ 'mode': 'active',
-      \ 'active_filetypes': ['ruby', 'javascript'],
-      \ 'passive_filetypes': []
+      \ 'active_filetypes': ['javascript'],
+      \ 'passive_filetypes': ['html']
       \ }
 "エラー表示マークを変更
 let g:syntastic_enable_signs=1
