@@ -5,7 +5,7 @@ rm -rf $DIR/../.zshrc ; ln -s $DIR/.zshrc $DIR/../.zshrc
 echo \"fixme > $DIR/../.zshrc.include
 rm -rf $DIR/../.bash_profile ; ln -s $DIR/.bash_profile $DIR/../.bash_profile
 rm -rf $DIR/../.bashrc ; ln -s $DIR/.bashrc $DIR/../.bashrc
-rm -rf $DIR/../.gitconfig ; ln -s $DIR/.bashrc $DIR/../.gitconfig
+rm -rf $DIR/../.gitconfig ; ln -s $DIR/.gitconfig $DIR/../.gitconfig
 echo \#fixme > $DIR/../.gitconfig.include
 
 
