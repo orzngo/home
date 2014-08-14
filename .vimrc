@@ -139,12 +139,12 @@ nnoremap <Space>t :<C-u>Unite -buffer-name=outline -vertical -winwidth=45 outlin
 ""vimshell
 "-------------------------------------------------------------------------------
 let g:vimshell_popup_command = 'topleft sp | execute "resize " .g:my_vimshell_popup() | set winfixheight'
-function! g:my_vimshell_popup()
+function! s:my_vimshell_popup()
     return winheight(0) * g:vimshell_popup_height / 90
 endfunction
 
 autocmd! Filetype vimfiler call g:my_vimfiler_settings()
-function! g:my_vimfiler_settings()
+function! s:my_vimfiler_settings()
     nnoremap <buffer>b :Unite bookmark -default-action=cd -buffer-name=bookmark<CR>
 endfunction
 
