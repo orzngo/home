@@ -117,6 +117,8 @@ NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
 
 let g:syntastic_typescript_checkers = ['tsc']
 let g:syntastic_typescript_tsc_args = "--noImplicitAny --target ES5"
+
+autocmd! BufNewFile,BufRead *.ts setlocal filetype=typescript
 "-------------------------------------------------------------------------------
 filetype plugin indent on	"required
 
