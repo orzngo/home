@@ -106,8 +106,11 @@ NeoBundle 'kmnk/vim-unite-giti'
 NeoBundle 'git://github.com/vim-scripts/actionscript.vim--Leider.git'
 NeoBundle 'hrsh7th/vim-versions'
 NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'git://github.com/jason0x43/vim-js-indent.git'
 
 NeoBundle 'git://github.com/hrsh7th/vim-better-css-indent.git'
+
+"NeoBundle 'AutoComplPop'
 
 "-------------------------------------------------------------------------------
 ""typescript
@@ -116,9 +119,23 @@ NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
 NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
 
 let g:syntastic_typescript_checkers = ['tsc']
-let g:syntastic_typescript_tsc_args = "--noImplicitAny --target ES5"
+let g:syntastic_typescript_tsc_args = "--noImplicitAny --target ES5 --module commonjs"
+filetype plugin on
 
+function! s:execTSS()
+  if s:orzngo_tss_exectable == 1
+    TSSstarthere
+    let s:orzngo_tss_exectable = 0
+  endif
+endfunction
+
+autocmd! VimEnter * let s:orzngo_tss_exectable = 1
 autocmd! BufNewFile,BufRead *.ts setlocal filetype=typescript
+autocmd! BufNewFile,BufRead *.ts call s:execTSS()
+set rtp+=/usr/lib/node_modules/typescript-tools/
+
+imap <Nul> <C-x><C-o>
+nnoremap <silent> <F5> :Ts<CR>
 "-------------------------------------------------------------------------------
 filetype plugin indent on	"required
 
