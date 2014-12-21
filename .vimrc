@@ -89,6 +89,7 @@ NeoBundle 'Shougo/vimshell.git'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'ujihisa/unite-colorscheme.git'
+NeoBundle 'lambdalisue/unite-linephrase'
 NeoBundle 'JavaScript-syntax'
 NeoBundle 'timcharper/textile.vim'
 NeoBundle 'thinca/vim-quickrun'
@@ -122,20 +123,27 @@ let g:syntastic_typescript_checkers = ['tsc']
 let g:syntastic_typescript_tsc_args = "--noImplicitAny --target ES5 --module commonjs"
 filetype plugin on
 
-function! s:execTSS()
-  if s:orzngo_tss_exectable == 1
+function! ExecTSS()
+  if !exists('s:orzngo_tss_is_running')
     TSSstarthere
-    let s:orzngo_tss_exectable = 0
+    let s:orzngo_tss_is_running = 1
+  else
+    TSSupdate
+    echo 'updated'
   endif
 endfunction
 
-autocmd! VimEnter * let s:orzngo_tss_exectable = 1
 autocmd! BufNewFile,BufRead *.ts setlocal filetype=typescript
-autocmd! BufNewFile,BufRead *.ts call s:execTSS()
 set rtp+=/usr/lib/node_modules/typescript-tools/
 
 imap <Nul> <C-x><C-o>
-nnoremap <silent> <F5> :Ts<CR>
+nnoremap <silent> <F5> :call ExecTSS()<CR>
+
+"-------------------------------------------------------------------------------
+""linephrase
+"------------------------------------------------------------------------------
+nnoremap <C-l> :Unite linephrase<CR>
+
 "-------------------------------------------------------------------------------
 filetype plugin indent on	"required
 
