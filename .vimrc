@@ -71,7 +71,9 @@ autocmd BufNewFile,BufRead *.as set filetype=actionscript
 if has('vim_starting')
  set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+call neobundle#end()
 
 "なんかあったら勝手にインストールはじめます
 if has('vim_starting')
