@@ -81,11 +81,6 @@ if has('vim_starting')
 endif
 
 NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'Shougo/unite.vim.git'
-NeoBundle 'Shougo/vimshell.git'
 NeoBundle 'Shougo/vimproc', {
   \ 'build' : {
     \ 'windows' : 'make -f make_mingw32.mak',
@@ -94,6 +89,11 @@ NeoBundle 'Shougo/vimproc', {
     \ 'unix' : 'make -f make_unix.mak',
   \ },
 \ }
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/unite.vim.git'
+NeoBundle 'Shougo/vimshell.git'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'ujihisa/unite-colorscheme.git'
 NeoBundle 'lambdalisue/unite-linephrase'
