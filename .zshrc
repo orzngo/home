@@ -43,7 +43,9 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 #プロンプトに色を付ける
 autoload -U colors; colors
 
-tmp_prompt="%{${fg[cyan]}%}%n%{${reset_color}%}[%{${fg_bold[cyan]}%}INS%{$reset_color%}]# "
+[ -f ~/.zshrc.hostName ] && source ~/.zshrc.hostName # ホスト名をインクルード
+
+tmp_prompt="%{${fg[cyan]}%}%n%{${fg[yellow]}%}@${prompt_host_name}%{${reset_color}%}[%{${fg_bold[cyan]}%}INS%{$reset_color%}]# "
 tmp_prompt2="%{${fg[cyan]}%}%_> %{${reset_color}%}"
 tmp_rprompt="%{${fg[green]}%}[%~]%{${reset_color}%}"
 tmp_sprompt="%{${fg[yellow]}%}%r is correct? [Yes, No, Abort, Edit]:%{${reset_color}%}"
@@ -58,10 +60,10 @@ fi
 function zle-line-init zle-keymap-select {
 	case $KEYMAP in
 		vicmd)
-			PROMPT="%{${fg[cyan]}%}%n%{${reset_color}%}[%{${fg_bold[red]}%}NOR%{$reset_color%}]# "
+			PROMPT="%{${fg[cyan]}%}%n%{${fg[yellow]}%}@${prompt_host_name}%{${reset_color}%}[%{${fg_bold[red]}%}NOR%{$reset_color%}]# "
 			;;
 		main|viins)
-			PROMPT="%{${fg[cyan]}%}%n%{${reset_color}%}[%{${fg_bold[cyan]}%}INS%{$reset_color%}]# "
+			PROMPT="%{${fg[cyan]}%}%n%{${fg[yellow]}%}@${prompt_host_name}%{${reset_color}%}[%{${fg_bold[cyan]}%}INS%{$reset_color%}]# "
 			;;
 	esac
 	zle reset-prompt
