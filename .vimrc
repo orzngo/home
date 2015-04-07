@@ -126,7 +126,7 @@ NeoBundle 'git://github.com/hrsh7th/vim-better-css-indent.git'
 ""typescript
 "-------------------------------------------------------------------------------
 NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
-NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
+NeoBundle 'https://github.com/clausreinke/typescript-tools.vim.git'
 
 let g:syntastic_typescript_checkers = ['tsc']
 let g:syntastic_typescript_tsc_args = "--noImplicitAny --target ES5 --module commonjs"
