@@ -148,16 +148,23 @@ set rtp+=/usr/lib/node_modules/typescript-tools/
 imap <Nul> <C-x><C-o>
 nnoremap <silent> <F5> :call ExecTSS()<CR>
 
+
+"-------------------------------------------------------------------------------
+""snippet
+"------------------------------------------------------------------------------
+" Enable snipMate compatibility feature.
+let g:neosnippet#enable_snipmate_compatibility = 1
+
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/neosnippets'
+
 "-------------------------------------------------------------------------------
 ""linephrase
 "------------------------------------------------------------------------------
 nnoremap <C-l> :Unite linephrase<CR>
-
 "-------------------------------------------------------------------------------
 filetype plugin indent on	"required
 
-"ひとまずエラー抑制の応急処置
-let g:neosnippet#disable_runtime_snippets = { "_": 1, }
 
 
 "-------------------------------------------------------------------------------
@@ -249,11 +256,43 @@ let g:neocomplcache_enable_camel_case_completion = 1
 let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_smart_case = 1
 let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_manual_completion_start_length = 0
-let g:neocomplcache_caching_percent_in_statusline = 1
-let g:neocomplcache_enable_skip_completion = 1
-let g:neocomplcache_skip_input_time = '0.5'
 
+let g:neocomplcache_enable_auto_select = 0
+
+" Define dictionary.
+let g:neocomplcache_dictionary_filetype_lists = {
+      \ 'default' : '',
+      \ 'vimshell' : $HOME.'/.vimshell_hist',
+      \ 'scheme' : $HOME.'/.gosh_completions'
+      \ }
+
+" Define keyword.
+if !exists('g:neocomplcache_keyword_patterns')
+  let g:neocomplcache_keyword_patterns = {}
+endif
+let g:neocomplcache_keyword_patterns['default'] ='\h\w*'
+
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neocomplcache_snippets_expand)
+smap <C-k>     <Plug>(neocomplcache_snippets_expand)
+inoremap <expr><C-g> neocomplcache#undo_completion()
+inoremap <expr><C-l> neocomplcache#complete_common_string()
+
+" Recommended key-mappings.
+" <CR>: close popup and save indent.
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  return neocomplcache#smart_close_popup() . "\<CR>"
+  " For no inserting <CR> key.
+  "return pumvisible() ?neocomplcache#close_popup() : "\<CR>"
+endfunction
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>": "\<TAB>"
+" <C-h>, <BS>: close popup and delete backwordchar.
+inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y> neocomplcache#close_popup()
+inoremap <expr><C-e> neocomplcache#cancel_popup()
 
 "-------------------------------------------------------------------------------
 ""JSON
