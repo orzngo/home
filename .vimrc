@@ -117,6 +117,7 @@ NeoBundle 'git://github.com/vim-scripts/actionscript.vim--Leider.git'
 NeoBundle 'hrsh7th/vim-versions'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'git://github.com/jason0x43/vim-js-indent.git'
+NeoBundle 'heavenshell/vim-jsdoc'
 
 NeoBundle 'git://github.com/hrsh7th/vim-better-css-indent.git'
 
@@ -152,6 +153,12 @@ nnoremap <silent> <F5> :call ExecTSS()<CR>
 ""linephrase
 "------------------------------------------------------------------------------
 nnoremap <C-l> :Unite linephrase<CR>
+
+
+"-------------------------------------------------------------------------------
+""jsdoc
+"------------------------------------------------------------------------------
+nnoremap <C-j> :JsDoc<CR>
 
 "-------------------------------------------------------------------------------
 filetype plugin indent on	"required
