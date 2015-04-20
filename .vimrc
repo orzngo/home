@@ -159,6 +159,11 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/neosnippets'
 
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
+
+
+
 "-------------------------------------------------------------------------------
 ""linephrase
 "------------------------------------------------------------------------------
@@ -281,8 +286,6 @@ endif
 let g:neocomplcache_keyword_patterns['default'] ='\h\w*'
 
 " Plugin key-mappings.
-imap <C-k>     <Plug>(neocomplcache_snippets_expand)
-smap <C-k>     <Plug>(neocomplcache_snippets_expand)
 inoremap <expr><C-g> neocomplcache#undo_completion()
 inoremap <expr><C-l> neocomplcache#complete_common_string()
 
@@ -290,9 +293,9 @@ inoremap <expr><C-l> neocomplcache#complete_common_string()
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-  return neocomplcache#smart_close_popup() . "\<CR>"
+  "return neocomplcache#smart_close_popup() . "\<CR>"
   " For no inserting <CR> key.
-  "return pumvisible() ?neocomplcache#close_popup() : "\<CR>"
+  return pumvisible() ?neocomplcache#close_popup() : "\<CR>"
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>": "\<TAB>"
