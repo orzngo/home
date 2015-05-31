@@ -207,7 +207,7 @@ let g:ctrlp_use_migemo = 1
 let g:ctrlp_clear_cache_on_exit = 0   " 終了時キャッシュをクリアしない
 let g:ctrlp_mruf_max            = 5000 " MRUの最大記録数
 let g:ctrlp_open_new_file       = 1   " 新規ファイル作成時にタブで開く
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files | grep -v "babel\|watch_q9"']
+"let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files | grep -v "babel\|watch_q9"']
 "-------------------------------------------------------------------------------
 ""Color
 "-------------------------------------------------------------------------------
@@ -290,9 +290,9 @@ inoremap <expr><C-l> neocomplcache#complete_common_string()
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-  return neocomplcache#smart_close_popup() . "\<CR>"
+  "return neocomplcache#smart_close_popup() . "\<CR>"
   " For no inserting <CR> key.
-  "return pumvisible() ?neocomplcache#close_popup() : "\<CR>"
+  return pumvisible() ?neocomplcache#close_popup() : "\<CR>"
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>": "\<TAB>"
