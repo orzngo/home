@@ -73,7 +73,6 @@ if has('vim_starting')
 endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-call neobundle#end()
 
 "なんかあったら勝手にインストールはじめます
 if has('vim_starting')
@@ -118,22 +117,28 @@ NeoBundle 'hrsh7th/vim-versions'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'git://github.com/jason0x43/vim-js-indent.git'
 NeoBundle 'heavenshell/vim-jsdoc'
-NeoBundle 'Quramy/tsuquyomi'
-
+"NeoBundle 'Quramy/tsuquyomi'
 NeoBundle 'git://github.com/hrsh7th/vim-better-css-indent.git'
+NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
+NeoBundle 'https://github.com/clausreinke/typescript-tools.vim.git'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'altercation/solarized'
+NeoBundle 'vim-scripts/newspaper.vim'
+NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'elzr/vim-json'
 
 "NeoBundle 'AutoComplPop'
 
 "-------------------------------------------------------------------------------
 ""typescript
 "-------------------------------------------------------------------------------
-NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
-NeoBundle 'https://github.com/clausreinke/typescript-tools.vim.git'
+call neobundle#end()
 
 let g:syntastic_typescript_checkers = ['tsc']
 let g:syntastic_typescript_tsc_args = "--noImplicitAny --target ES5 --module commonjs"
 filetype plugin on
 
+"tss
 function! ExecTSS()
   if !exists('s:orzngo_tss_is_running')
     TSSstarthere
@@ -217,10 +222,6 @@ let g:ctrlp_open_new_file       = 1   " 新規ファイル作成時にタブで�
 "-------------------------------------------------------------------------------
 ""Color
 "-------------------------------------------------------------------------------
-NeoBundle 'tomasr/molokai'
-NeoBundle 'altercation/solarized'
-NeoBundle 'vim-scripts/newspaper.vim'
-NeoBundle 'nanotech/jellybeans.vim'
 
 :try
     colorscheme jellybeans
@@ -309,7 +310,6 @@ inoremap <expr><C-e> neocomplcache#cancel_popup()
 "-------------------------------------------------------------------------------
 ""JSON
 "-------------------------------------------------------------------------------
-NeoBundle 'elzr/vim-json'
 
 au BufRead,BufNewFile *.json set filetype=json
 
