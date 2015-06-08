@@ -129,16 +129,68 @@ NeoBundle 'elzr/vim-json'
 
 "NeoBundle 'AutoComplPop'
 
+call neobundle#end()
+"-------------------------------------------------------------------------------
+""neocomplcache
+"------------------------------------------------------------------------------
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_camel_case_completion = 0
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_smart_case = 1
+let g:neocomplcache_min_syntax_length = 3
+
+let g:neocomplcache_enable_auto_select = 0
+
+" Define dictionary.
+let g:neocomplcache_dictionary_filetype_lists = {
+      \ 'default' : '',
+      \ 'vimshell' : $HOME.'/.vimshell_hist',
+      \ 'scheme' : $HOME.'/.gosh_completions'
+      \ }
+
+" Define keyword.
+if !exists('g:neocomplcache_keyword_patterns')
+  let g:neocomplcache_keyword_patterns = {}
+endif
+let g:neocomplcache_keyword_patterns['default'] ='\h\w*'
+
+" Plugin key-mappings.
+inoremap <expr><C-g> neocomplcache#undo_completion()
+inoremap <expr><C-l> neocomplcache#complete_common_string()
+
+" Recommended key-mappings.
+" <CR>: close popup and save indent.
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  "return neocomplcache#smart_close_popup() . "\<CR>"
+  " For no inserting <CR> key.
+  return pumvisible() ?neocomplcache#close_popup() : "\<CR>"
+endfunction
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>": "\<TAB>"
+" <C-h>, <BS>: close popup and delete backwordchar.
+inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y> neocomplcache#close_popup()
+inoremap <expr><C-e> neocomplcache#cancel_popup()
+
+imap <C-o> <C-x><C-o>
+
+
 "-------------------------------------------------------------------------------
 ""typescript
 "-------------------------------------------------------------------------------
-call neobundle#end()
+filetype plugin on
+if !exists('g:NeoComplCache_OmniPatterns')
+      let g:neocomplcache_omnipatterns = {}
+endif
+let g:neocomplcache_omnipatterns['typescript'] = '[^. *\t]\.\w*\|\h\w*::'
 
 let g:syntastic_typescript_checkers = ['tsc']
 let g:syntastic_typescript_tsc_args = "--noImplicitAny --target ES5 --module commonjs"
-filetype plugin on
 
 "tss
+let g:TSS = ['tss', '--module', 'commonjs', '--target', 'ES5', '--noImplicitAny']
 function! ExecTSS()
   if !exists('s:orzngo_tss_is_running')
     TSSstarthere
@@ -148,13 +200,9 @@ function! ExecTSS()
     echo 'updated'
   endif
 endfunction
+set rtp+=~/.vim/bundle/typescript-tools.vim/
 
-autocmd! BufNewFile,BufRead *.ts setlocal filetype=typescript
-set rtp+=/usr/lib/node_modules/typescript-tools/
-
-imap <Nul> <C-x><C-o>
 nnoremap <silent> <F5> :call ExecTSS()<CR>
-
 
 "-------------------------------------------------------------------------------
 ""snippet
@@ -266,46 +314,6 @@ let g:syntastic_warning_symbol='⚠'
 autocmd BufRead *.php\|*.ctp\|*.tpl :set dictionary=~/.vim/dict/php.dict filetype=php
 
 
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_enable_underbar_completion = 1
-let g:neocomplcache_smart_case = 1
-let g:neocomplcache_min_syntax_length = 3
-
-let g:neocomplcache_enable_auto_select = 0
-
-" Define dictionary.
-let g:neocomplcache_dictionary_filetype_lists = {
-      \ 'default' : '',
-      \ 'vimshell' : $HOME.'/.vimshell_hist',
-      \ 'scheme' : $HOME.'/.gosh_completions'
-      \ }
-
-" Define keyword.
-if !exists('g:neocomplcache_keyword_patterns')
-  let g:neocomplcache_keyword_patterns = {}
-endif
-let g:neocomplcache_keyword_patterns['default'] ='\h\w*'
-
-" Plugin key-mappings.
-inoremap <expr><C-g> neocomplcache#undo_completion()
-inoremap <expr><C-l> neocomplcache#complete_common_string()
-
-" Recommended key-mappings.
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-  "return neocomplcache#smart_close_popup() . "\<CR>"
-  " For no inserting <CR> key.
-  return pumvisible() ?neocomplcache#close_popup() : "\<CR>"
-endfunction
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>": "\<TAB>"
-" <C-h>, <BS>: close popup and delete backwordchar.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y> neocomplcache#close_popup()
-inoremap <expr><C-e> neocomplcache#cancel_popup()
 
 "-------------------------------------------------------------------------------
 ""JSON
