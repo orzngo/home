@@ -118,6 +118,7 @@ NeoBundle 'hrsh7th/vim-versions'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'git://github.com/jason0x43/vim-js-indent.git'
 NeoBundle 'heavenshell/vim-jsdoc'
+NeoBundle 'Quramy/tsuquyomi'
 
 NeoBundle 'git://github.com/hrsh7th/vim-better-css-indent.git'
 
