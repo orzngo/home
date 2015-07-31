@@ -126,6 +126,7 @@ NeoBundle 'altercation/solarized'
 NeoBundle 'vim-scripts/newspaper.vim'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'elzr/vim-json'
+NeoBundle 'cohama/agit.vim'
 
 "NeoBundle 'AutoComplPop'
 
