@@ -237,8 +237,8 @@ filetype plugin indent on	"required
 "-------------------------------------------------------------------------------
 ""Unite
 "-------------------------------------------------------------------------------
-"nnoremap <silent> <Space>g :Unite giti<CR>
-nnoremap <silent> <Space>g :UniteVersions<CR>
+nnoremap <silent> <Space>g :Unite giti<CR>
+"nnoremap <silent> <Space>g :UniteVersions<CR>
 let g:unite_split_rule = 'botright'
 
 "-------------------------------------------------------------------------------
