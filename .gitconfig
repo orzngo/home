@@ -9,3 +9,6 @@
 [user]
 	name = orzngo
 	email = orzlabo@gmail.com
+[core]
+	precomposeunicode = true
+	quotepath = false

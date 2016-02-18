@@ -6,7 +6,6 @@ export LANG=ja_JP.UTF-8  # 文字コードをUTF-8に設定
 export KCODE=u           # KCODEにUTF-8を設定
 #export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
 export PATH=$PATH:$HOME/bin
-export JAVA_HOME=/Library/Java/Home
 
 #setopt correct           # コマンドのスペルを訂正する
 #setopt magic_equal_subst # =以降も補完する(--prefix=/usrなど)
